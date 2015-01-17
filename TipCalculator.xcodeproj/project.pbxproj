@@ -14,6 +14,8 @@
 		A74FF4C51A68A1EA0001F120 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A74FF4C41A68A1EA0001F120 /* Images.xcassets */; };
 		A74FF4C81A68A1EA0001F120 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A74FF4C61A68A1EA0001F120 /* LaunchScreen.xib */; };
 		A74FF4D41A68A1EA0001F120 /* TipCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A74FF4D31A68A1EA0001F120 /* TipCalculatorTests.m */; };
+		A74FF5221A69E25D0001F120 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A74FF5201A69E25D0001F120 /* SettingsViewController.m */; };
+		A74FF5231A69E25D0001F120 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A74FF5211A69E25D0001F120 /* SettingsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		A74FF4CD1A68A1EA0001F120 /* TipCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A74FF4D21A68A1EA0001F120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A74FF4D31A68A1EA0001F120 /* TipCalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipCalculatorTests.m; sourceTree = "<group>"; };
+		A74FF51F1A69E25D0001F120 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = ../SettingsViewController.h; sourceTree = "<group>"; };
+		A74FF5201A69E25D0001F120 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = ../SettingsViewController.m; sourceTree = "<group>"; };
+		A74FF5211A69E25D0001F120 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingsViewController.xib; path = ../SettingsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,9 @@
 		A74FF4B61A68A1EA0001F120 /* TipCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				A74FF51F1A69E25D0001F120 /* SettingsViewController.h */,
+				A74FF5201A69E25D0001F120 /* SettingsViewController.m */,
+				A74FF5211A69E25D0001F120 /* SettingsViewController.xib */,
 				A74FF4BB1A68A1EA0001F120 /* AppDelegate.h */,
 				A74FF4BC1A68A1EA0001F120 /* AppDelegate.m */,
 				A74FF4BE1A68A1EA0001F120 /* ViewController.h */,
@@ -202,6 +210,7 @@
 				A74FF4C31A68A1EA0001F120 /* Main.storyboard in Resources */,
 				A74FF4C81A68A1EA0001F120 /* LaunchScreen.xib in Resources */,
 				A74FF4C51A68A1EA0001F120 /* Images.xcassets in Resources */,
+				A74FF5231A69E25D0001F120 /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +231,7 @@
 				A74FF4C01A68A1EA0001F120 /* ViewController.m in Sources */,
 				A74FF4BD1A68A1EA0001F120 /* AppDelegate.m in Sources */,
 				A74FF4BA1A68A1EA0001F120 /* main.m in Sources */,
+				A74FF5221A69E25D0001F120 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,8 +356,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TipCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -356,8 +368,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TipCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -414,6 +428,7 @@
 				A74FF4D91A68A1EA0001F120 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A74FF4DA1A68A1EA0001F120 /* Build configuration list for PBXNativeTarget "TipCalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +437,7 @@
 				A74FF4DC1A68A1EA0001F120 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
